@@ -1,0 +1,75 @@
+\doxysection{Scene.\+h}
+\hypertarget{_scene_8h_source}{}\label{_scene_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <declarations.h>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{namespace\ }coldEngine}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_window}{Window}};}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity}{Entity}};}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{class\ }b2World;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_kernel}{Kernel}};}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_message_system}{MessageSystem}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_player_movement_component}{PlayerMovementComponent}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }glt;}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcold_engine_1_1_scene}{Scene}}}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ shared\_ptr<\ Render\_Node\ >\ scene;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcold_engine_1_1_window}{Window}}*\ window;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ b2World*\ physics\_world;\ \textcolor{comment}{//\ Variable\ miembro\ para\ el\ mundo\ de\ Box2D}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ shared\_ptr<Kernel>\ kernel;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ shared\_ptr<MessageSystem>\ messageSystem;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ shared\_ptr<Entity>\ character;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ vector<shared\_ptr<Entity>>\ numbers;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ vector<shared\_ptr<Entity>>\ walls;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ shared\_ptr<PlayerMovementComponent>\ movComponent;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ vector<Entity*>\ levelEntities;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcold_engine_1_1_scene}{Scene}}(\mbox{\hyperlink{classcold_engine_1_1_window}{Window}}\&\ given\_window);}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcold_engine_1_1_scene}{\string~Scene}}();}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ CreateScene();}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ ResetViewport();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcold_engine_1_1_scene_a93abcddb96fe3926d64bb60c9c00eda3}{initialize}}(std::shared\_ptr<Kernel>\ kernel,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<MessageSystem>\ messageBus,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<Entity>\ character,}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ vector<shared\_ptr<Entity>>\ numbers,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ vector<shared\_ptr<Entity>>\ walls,}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<PlayerMovementComponent>\ movComponent);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcold_engine_1_1_scene_a4337a33196023d83aaa34d7018dbe8d3}{Add}}(\textcolor{keyword}{const}\ std::string\&\ name,\ std::shared\_ptr<\ Node\ >\ node);}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ Node*\ \mbox{\hyperlink{classcold_engine_1_1_scene_abf3ccec7b1dd08ba7b55d3f486bb44cb}{GetEntity}}(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcold_engine_1_1_scene_ab7397ae11bba3228efec28df0f6d79b3}{Update}}();}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcold_engine_1_1_scene_a3c1da46c5fc1ee16ad390833f21087f3}{distance\_to\_numbers}}(\textcolor{keywordtype}{float}\ enemyX,\ \textcolor{keywordtype}{float}\ enemyY,\ \textcolor{keywordtype}{float}\ enemyZ,\ \textcolor{keywordtype}{float}\ playerX,\ \textcolor{keywordtype}{float}\ playerY,\ \textcolor{keywordtype}{float}\ playerZ);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ rotate\_numbers();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ TranslateCamera(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ z);}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ RotateCamerta(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ z);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ RotateEntities(\textcolor{keyword}{const}\ std::string\&\ name,\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ \textcolor{keywordtype}{float}\ z);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcold_engine_1_1_scene_a324fe818095c1ef14d2869b007fa98c6}{DebugMethod}}();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \};}
+\DoxyCodeLine{00098\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ }
+
+\end{DoxyCode}

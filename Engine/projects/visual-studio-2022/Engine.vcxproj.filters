@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;h;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headers\internal">
+      <UniqueIdentifier>{fb98df49-f41f-463d-93c2-6a27b38e8b44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\E">
+      <UniqueIdentifier>{a4cc2bb8-ba56-4b78-a1b6-c4aa504b60e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\C">
+      <UniqueIdentifier>{6e66a00d-d0dc-4620-a6a5-c05fe1a68048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\S">
+      <UniqueIdentifier>{c940f207-516a-455b-8eb7-187c6d628ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\E">
+      <UniqueIdentifier>{ad339e2c-80f8-440e-b4db-b3f99d64ceed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\C">
+      <UniqueIdentifier>{c7c46e9a-1065-4e93-81eb-8eec54480b16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\S">
+      <UniqueIdentifier>{37602d17-2320-46be-961e-85d084f75b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\C\Transform">
+      <UniqueIdentifier>{75c9286c-45eb-4779-86cb-da7c07f86ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\C\Transform">
+      <UniqueIdentifier>{b76cf61c-bfce-412b-8e0c-48b15a21cb83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\headers\Window.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Kernel.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Keyboard.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Message.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\MessageListener.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Scene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Entity.h">
+      <Filter>Headers\E</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Component.h">
+      <Filter>Headers\C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\MeshRenderer.h">
+      <Filter>Headers\C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\PlayerMovementComponent.h">
+      <Filter>Headers\C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Transform.h">
+      <Filter>Headers\C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\EntitySystem.h">
+      <Filter>Headers\S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\InputSystem.h">
+      <Filter>Headers\S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\MessageSystem.h">
+      <Filter>Headers\S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\RenderSystem.h">
+      <Filter>Headers\S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\System.h">
+      <Filter>Headers\S</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\EntityListenerComponent.h">
+      <Filter>Headers\C</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Position.h">
+      <Filter>Headers\C\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Rotation.h">
+      <Filter>Headers\C\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\Scale.h">
+      <Filter>Headers\C\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\declarations.h">
+      <Filter>Headers\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\initialize.h">
+      <Filter>Headers\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\sources\finalize.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\initialize.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Kernel.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Keyboard.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Scene.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Message.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\MessageListener.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Window.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\winmain.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Entity.cpp">
+      <Filter>Sources\E</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\Component.cpp">
+      <Filter>Sources\C</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\MeshRenderer.cpp">
+      <Filter>Sources\C</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\PlayerMovementComponent.cpp">
+      <Filter>Sources\C</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\EntitySystem.cpp">
+      <Filter>Sources\S</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\InputSystem.cpp">
+      <Filter>Sources\S</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\MessageSystem.cpp">
+      <Filter>Sources\S</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\RenderSystem.cpp">
+      <Filter>Sources\S</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\transform\Position.cpp">
+      <Filter>Sources\C\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\transform\Rotation.cpp">
+      <Filter>Sources\C\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\transform\Scale.cpp">
+      <Filter>Sources\C\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\sources\EntityListenerComponent.cpp">
+      <Filter>Sources\C</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

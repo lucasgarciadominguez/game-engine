@@ -1,0 +1,60 @@
+\doxysection{cold\+Engine\+::Entity\+Listener\+Component Class Reference}
+\hypertarget{classcold_engine_1_1_entity_listener_component}{}\label{classcold_engine_1_1_entity_listener_component}\index{coldEngine::EntityListenerComponent@{coldEngine::EntityListenerComponent}}
+Inheritance diagram for cold\+Engine\+::Entity\+Listener\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcold_engine_1_1_entity_listener_component}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcold_engine_1_1_entity_listener_component_a7319426faf1cb0b9f1157ab18dd175e6}\label{classcold_engine_1_1_entity_listener_component_a7319426faf1cb0b9f1157ab18dd175e6} 
+{\bfseries Entity\+Listener\+Component} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_message_system}{Message\+System}} $>$ bus)
+\item 
+void \mbox{\hyperlink{classcold_engine_1_1_entity_listener_component_ada0440c21e54ad6227076adaf0c371b7}{Use\+Message}} (\mbox{\hyperlink{classcold_engine_1_1_message}{Message}} \texorpdfstring{$\ast$}{*}message) override
+\begin{DoxyCompactList}\small\item\em Decodes the message and uses them for other tasks Substrings the message and uses them for changing the behaviour in the entities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcold_engine_1_1_message_listener}{cold\+Engine\+::\+Message\+Listener}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Message\+Listener} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_message_system}{Message\+System}} $>$ bus)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcold_engine_1_1_component}{cold\+Engine\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcold_engine_1_1_component_a0a0f0fd88a7f26ef36732770d3c7ef4d}{Component}} ()
+\item 
+void {\bfseries Set\+Entity} (\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*}entity)
+\begin{DoxyCompactList}\small\item\em Set the entity this component is attached to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Gets the entity linked. \end{DoxyCompactList}\item 
+virtual void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classcold_engine_1_1_component}{cold\+Engine\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries linked\+Entity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcold_engine_1_1_entity_listener_component_ada0440c21e54ad6227076adaf0c371b7}\index{coldEngine::EntityListenerComponent@{coldEngine::EntityListenerComponent}!UseMessage@{UseMessage}}
+\index{UseMessage@{UseMessage}!coldEngine::EntityListenerComponent@{coldEngine::EntityListenerComponent}}
+\doxysubsubsection{\texorpdfstring{UseMessage()}{UseMessage()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_entity_listener_component_ada0440c21e54ad6227076adaf0c371b7} 
+void cold\+Engine\+::\+Entity\+Listener\+Component\+::\+Use\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcold_engine_1_1_message}{Message}} \texorpdfstring{$\ast$}{*}}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decodes the message and uses them for other tasks Substrings the message and uses them for changing the behaviour in the entities. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classcold_engine_1_1_message_listener}{cold\+Engine\+::\+Message\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Entity\+Listener\+Component.\+h\end{DoxyCompactItemize}

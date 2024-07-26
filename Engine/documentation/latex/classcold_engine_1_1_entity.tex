@@ -1,0 +1,81 @@
+\doxysection{cold\+Engine\+::Entity Class Reference}
+\hypertarget{classcold_engine_1_1_entity}{}\label{classcold_engine_1_1_entity}\index{coldEngine::Entity@{coldEngine::Entity}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcold_engine_1_1_entity_a59256db697ed9dd925b0d7e5278a92be}{\texorpdfstring{$\sim$}{\string~}\+Entity}} ()
+\item 
+\Hypertarget{classcold_engine_1_1_entity_a71b38be4769d4e36f8b2cd35ff677723}\label{classcold_engine_1_1_entity_a71b38be4769d4e36f8b2cd35ff677723} 
+{\bfseries Entity} (const std\+::string \&Entity\+Name, \mbox{\hyperlink{classcold_engine_1_1_scene}{Scene}} \&level, \mbox{\hyperlink{classcold_engine_1_1_render_system}{Render\+System}} \&\+\_\+render\+System, const std\+::string \&obj\+\_\+file\+\_\+path, \mbox{\hyperlink{classcold_engine_1_1_entity_system}{Entity\+System}} \&task)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_a0ad33f920b2af379ccb3848d9d65b043}\label{classcold_engine_1_1_entity_a0ad33f920b2af379ccb3848d9d65b043} 
+{\bfseries Entity} (const std\+::string \&Entity\+Name, \mbox{\hyperlink{classcold_engine_1_1_scene}{Scene}} \&level, \mbox{\hyperlink{classcold_engine_1_1_render_system}{Render\+System}} \&\+\_\+render\+System, const std\+::string \&obj\+\_\+file\+\_\+path, \mbox{\hyperlink{classcold_engine_1_1_entity_system}{Entity\+System}} \&task, \mbox{\hyperlink{classcold_engine_1_1_entity_listener_component}{Entity\+Listener\+Component}} \&\+\_\+entity\+Listener\+Component)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_accb96644958fb56142cbd809002730d8}\label{classcold_engine_1_1_entity_accb96644958fb56142cbd809002730d8} 
+virtual void {\bfseries Update} ()
+\item 
+\Hypertarget{classcold_engine_1_1_entity_aeb0428a3511a1ce0f7b084a5748d08f0}\label{classcold_engine_1_1_entity_aeb0428a3511a1ce0f7b084a5748d08f0} 
+void {\bfseries Set\+Scale} (float x, float y, float z)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_ae1310905f021f2f820e5b6dad3daa622}\label{classcold_engine_1_1_entity_ae1310905f021f2f820e5b6dad3daa622} 
+void {\bfseries Translate} (float x, float y, float z)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_a26ab38a7f764c0f0e5d57127b03253e5}\label{classcold_engine_1_1_entity_a26ab38a7f764c0f0e5d57127b03253e5} 
+void {\bfseries Set\+Position} (float x, float y, float z)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_aac3ea3c9bc0055a3071240dab6dfdeb0}\label{classcold_engine_1_1_entity_aac3ea3c9bc0055a3071240dab6dfdeb0} 
+void {\bfseries Set\+Rotation} (float x, float y, float z)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_aef2067296e334c9d96c7e86ab7ebba93}\label{classcold_engine_1_1_entity_aef2067296e334c9d96c7e86ab7ebba93} 
+void {\bfseries Get\+Position} (float \&x, float \&y, float \&z)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_ae5d3e2069a4764451be9cb85e43e8469}\label{classcold_engine_1_1_entity_ae5d3e2069a4764451be9cb85e43e8469} 
+void {\bfseries Add\+Component} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_component}{Component}} $>$ comp)
+\begin{DoxyCompactList}\small\item\em Add \doxylink{classcold_engine_1_1_component}{Component} to vector of components. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_entity_a2699b448bb061b05fce96ea3a64fe680}\label{classcold_engine_1_1_entity_a2699b448bb061b05fce96ea3a64fe680} 
+void {\bfseries Add\+Child} (\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \&child)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_ab3883bdcb532f63a7e9d947db98a3872}\label{classcold_engine_1_1_entity_ab3883bdcb532f63a7e9d947db98a3872} 
+void {\bfseries Remove\+Child} (\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \&child)
+\item 
+\Hypertarget{classcold_engine_1_1_entity_afa2251da6742618e7b1c93ed076f7faf}\label{classcold_engine_1_1_entity_afa2251da6742618e7b1c93ed076f7faf} 
+void {\bfseries Set\+Parent} (\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \&\+\_\+parent)
+\item 
+void \mbox{\hyperlink{classcold_engine_1_1_entity_a297410347e4e0a9fbb5960bb3dc47e70}{Un\+Set\+Parent}} ()
+\begin{DoxyCompactList}\small\item\em Set parent as null. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_entity_a396afd00ffcbea7fea6215e4fc937be2}\label{classcold_engine_1_1_entity_a396afd00ffcbea7fea6215e4fc937be2} 
+\mbox{\hyperlink{classcold_engine_1_1_transform}{Transform}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Transform} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcold_engine_1_1_entity_a34a65267a1f4da770662adbac0b2892f}\label{classcold_engine_1_1_entity_a34a65267a1f4da770662adbac0b2892f} 
+string {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcold_engine_1_1_entity_a59256db697ed9dd925b0d7e5278a92be}\index{coldEngine::Entity@{coldEngine::Entity}!````~Entity@{\texorpdfstring{$\sim$}{\string~}Entity}}
+\index{````~Entity@{\texorpdfstring{$\sim$}{\string~}Entity}!coldEngine::Entity@{coldEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Entity()}{\string~Entity()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_entity_a59256db697ed9dd925b0d7e5278a92be} 
+cold\+Engine\+::\+Entity\+::\texorpdfstring{$\sim$}{\string~}\+Entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcold_engine_1_1_entity_a297410347e4e0a9fbb5960bb3dc47e70}\index{coldEngine::Entity@{coldEngine::Entity}!UnSetParent@{UnSetParent}}
+\index{UnSetParent@{UnSetParent}!coldEngine::Entity@{coldEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{UnSetParent()}{UnSetParent()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_entity_a297410347e4e0a9fbb5960bb3dc47e70} 
+void cold\+Engine\+::\+Entity\+::\+Un\+Set\+Parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Set parent as null. 
+
+Set parent as null 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Entity.\+h\end{DoxyCompactItemize}

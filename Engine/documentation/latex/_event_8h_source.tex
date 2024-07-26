@@ -1,0 +1,29 @@
+\doxysection{Event.\+h}
+\hypertarget{_event_8h_source}{}\label{_event_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_event}{Event}}}
+\DoxyCodeLine{00003\ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{keyword}{enum}\ Type}
+\DoxyCodeLine{00005\ \ \ \ \ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ CLOSE,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ KEY\_PRESSED,}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ KEY\_RELEASED}
+\DoxyCodeLine{00009\ \ \ \ \ \}}
+\DoxyCodeLine{00010\ \ \ \ \ type;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{union\ }\mbox{\hyperlink{union_event_1_1_data}{Data}}}
+\DoxyCodeLine{00013\ \ \ \ \ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\{\ \textcolor{keywordtype}{int}\ key\_code;\ \}\ keyboard;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ x,\ y;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ buttons;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ mouse;}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ data;}
+\DoxyCodeLine{00024\ \};}
+
+\end{DoxyCode}

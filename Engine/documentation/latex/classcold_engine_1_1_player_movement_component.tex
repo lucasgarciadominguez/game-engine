@@ -1,0 +1,75 @@
+\doxysection{cold\+Engine\+::Player\+Movement\+Component Class Reference}
+\hypertarget{classcold_engine_1_1_player_movement_component}{}\label{classcold_engine_1_1_player_movement_component}\index{coldEngine::PlayerMovementComponent@{coldEngine::PlayerMovementComponent}}
+Inheritance diagram for cold\+Engine\+::Player\+Movement\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcold_engine_1_1_player_movement_component}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcold_engine_1_1_player_movement_component_ace1a44d1dfbd6e16243a7f22ec855a87}\label{classcold_engine_1_1_player_movement_component_ace1a44d1dfbd6e16243a7f22ec855a87} 
+{\bfseries Player\+Movement\+Component} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_message_system}{Message\+System}} $>$ bus, float \+\_\+speed, string \+\_\+sound\+File)
+\item 
+\Hypertarget{classcold_engine_1_1_player_movement_component_a89db6704adc38173bc8be7f0462455c5}\label{classcold_engine_1_1_player_movement_component_a89db6704adc38173bc8be7f0462455c5} 
+int {\bfseries Get\+Actual\+Number} ()
+\item 
+\Hypertarget{classcold_engine_1_1_player_movement_component_a5ee1286c0850f88f30ae6b1b0354b31b}\label{classcold_engine_1_1_player_movement_component_a5ee1286c0850f88f30ae6b1b0354b31b} 
+void {\bfseries Increase\+Number} ()
+\item 
+void \mbox{\hyperlink{classcold_engine_1_1_player_movement_component_a0189a070fa0de6a027afa4f648512fac}{Use\+Message}} (\mbox{\hyperlink{classcold_engine_1_1_message}{Message}} \texorpdfstring{$\ast$}{*}message) override
+\begin{DoxyCompactList}\small\item\em Decodes the messages and applies them to the entities. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_player_movement_component_a9bda8cf4d02307e6fa685c02c2da71a9}\label{classcold_engine_1_1_player_movement_component_a9bda8cf4d02307e6fa685c02c2da71a9} 
+void {\bfseries Set\+Movement\+Limits} (float forward, float backwards, float right, float left)
+\begin{DoxyCompactList}\small\item\em Set the limits coordinates for the entity movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcold_engine_1_1_message_listener}{cold\+Engine\+::\+Message\+Listener}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Message\+Listener} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_message_system}{Message\+System}} $>$ bus)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classcold_engine_1_1_component}{cold\+Engine\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcold_engine_1_1_component_a0a0f0fd88a7f26ef36732770d3c7ef4d}{Component}} ()
+\item 
+void {\bfseries Set\+Entity} (\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*}entity)
+\begin{DoxyCompactList}\small\item\em Set the entity this component is attached to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Gets the entity linked. \end{DoxyCompactList}\item 
+virtual void {\bfseries Update} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcold_engine_1_1_player_movement_component_a70e12d06e8715d1adbfb05c436c8e4da}\label{classcold_engine_1_1_player_movement_component_a70e12d06e8715d1adbfb05c436c8e4da} 
+bool {\bfseries enable\+Limits}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classcold_engine_1_1_component}{cold\+Engine\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} {\bfseries linked\+Entity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcold_engine_1_1_player_movement_component_a0189a070fa0de6a027afa4f648512fac}\index{coldEngine::PlayerMovementComponent@{coldEngine::PlayerMovementComponent}!UseMessage@{UseMessage}}
+\index{UseMessage@{UseMessage}!coldEngine::PlayerMovementComponent@{coldEngine::PlayerMovementComponent}}
+\doxysubsubsection{\texorpdfstring{UseMessage()}{UseMessage()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_player_movement_component_a0189a070fa0de6a027afa4f648512fac} 
+void cold\+Engine\+::\+Player\+Movement\+Component\+::\+Use\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcold_engine_1_1_message}{Message}} \texorpdfstring{$\ast$}{*}}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decodes the messages and applies them to the entities. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classcold_engine_1_1_message_listener}{cold\+Engine\+::\+Message\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Player\+Movement\+Component.\+h\end{DoxyCompactItemize}

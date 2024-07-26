@@ -1,0 +1,67 @@
+\doxysection{cold\+Engine\+::Window Class Reference}
+\hypertarget{classcold_engine_1_1_window}{}\label{classcold_engine_1_1_window}\index{coldEngine::Window@{coldEngine::Window}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcold_engine_1_1_window_1_1_event}{Event}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcold_engine_1_1_window_a5e71bdc3cb6378fc3697f80a4df6ba7a}\label{classcold_engine_1_1_window_a5e71bdc3cb6378fc3697f80a4df6ba7a} 
+{\bfseries Window} (const char \texorpdfstring{$\ast$}{*}title, const int width, const int height, const bool fullscreen)
+\item 
+unsigned \mbox{\hyperlink{classcold_engine_1_1_window_acd19b9ca088f702808c256d046f3aa49}{get\+\_\+width}} () const
+\item 
+unsigned \mbox{\hyperlink{classcold_engine_1_1_window_a6c9a008a7c25c9bcea8cd0e6cd900f84}{get\+\_\+height}} () const
+\item 
+bool \mbox{\hyperlink{classcold_engine_1_1_window_a20e2fd4c255b83a2c59596a80265e8f7}{poll}} (\mbox{\hyperlink{structcold_engine_1_1_window_1_1_event}{Event}} \&event) const
+\item 
+\Hypertarget{classcold_engine_1_1_window_acd03fed2cccff6925b42e3233b0aa988}\label{classcold_engine_1_1_window_acd03fed2cccff6925b42e3233b0aa988} 
+void {\bfseries enable\+\_\+vsync} ()
+\item 
+\Hypertarget{classcold_engine_1_1_window_a9e251d8c18d0ef8f386db8731b6733df}\label{classcold_engine_1_1_window_a9e251d8c18d0ef8f386db8731b6733df} 
+void {\bfseries disable\+\_\+vsync} ()
+\item 
+void \mbox{\hyperlink{classcold_engine_1_1_window_a6ac78b6223ffdfe3b8421129fb4d8c7d}{clear}} () const
+\item 
+void \mbox{\hyperlink{classcold_engine_1_1_window_ac953b29053eb910f1356d4953b2a6f34}{swap\+\_\+buffers}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcold_engine_1_1_window_a6ac78b6223ffdfe3b8421129fb4d8c7d}\index{coldEngine::Window@{coldEngine::Window}!clear@{clear}}
+\index{clear@{clear}!coldEngine::Window@{coldEngine::Window}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_window_a6ac78b6223ffdfe3b8421129fb4d8c7d} 
+void cold\+Engine\+::\+Window\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Borra el buffer de la pantalla usando Open\+GL. \Hypertarget{classcold_engine_1_1_window_a6c9a008a7c25c9bcea8cd0e6cd900f84}\index{coldEngine::Window@{coldEngine::Window}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!coldEngine::Window@{coldEngine::Window}}
+\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_window_a6c9a008a7c25c9bcea8cd0e6cd900f84} 
+unsigned cold\+Engine\+::\+Window\+::get\+\_\+height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Retorna el alto actual de la ventana (el usuario puede cambiarlo). \Hypertarget{classcold_engine_1_1_window_acd19b9ca088f702808c256d046f3aa49}\index{coldEngine::Window@{coldEngine::Window}!get\_width@{get\_width}}
+\index{get\_width@{get\_width}!coldEngine::Window@{coldEngine::Window}}
+\doxysubsubsection{\texorpdfstring{get\_width()}{get\_width()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_window_acd19b9ca088f702808c256d046f3aa49} 
+unsigned cold\+Engine\+::\+Window\+::get\+\_\+width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Retorna el ancho actual de la ventana (el usuario puede cambiarlo). \Hypertarget{classcold_engine_1_1_window_a20e2fd4c255b83a2c59596a80265e8f7}\index{coldEngine::Window@{coldEngine::Window}!poll@{poll}}
+\index{poll@{poll}!coldEngine::Window@{coldEngine::Window}}
+\doxysubsubsection{\texorpdfstring{poll()}{poll()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_window_a20e2fd4c255b83a2c59596a80265e8f7} 
+bool cold\+Engine\+::\+Window\+::poll (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcold_engine_1_1_window_1_1_event}{Event}} \&}]{event}{}\end{DoxyParamCaption}) const}
+
+Permite extraer un evento de la cola de eventos asociada a la ventana. \Hypertarget{classcold_engine_1_1_window_ac953b29053eb910f1356d4953b2a6f34}\index{coldEngine::Window@{coldEngine::Window}!swap\_buffers@{swap\_buffers}}
+\index{swap\_buffers@{swap\_buffers}!coldEngine::Window@{coldEngine::Window}}
+\doxysubsubsection{\texorpdfstring{swap\_buffers()}{swap\_buffers()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_window_ac953b29053eb910f1356d4953b2a6f34} 
+void cold\+Engine\+::\+Window\+::swap\+\_\+buffers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Intercambia el buffer visible con el buffer oculto. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Window.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\doxysection{Player\+Movement\+Component.\+h}
+\hypertarget{_player_movement_component_8h_source}{}\label{_player_movement_component_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <MessageListener.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <Component.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }coldEngine}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity}{Entity}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcold_engine_1_1_player_movement_component}{PlayerMovementComponent}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcold_engine_1_1_message_listener}{MessageListener}},\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classcold_engine_1_1_component}{Component}}}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ speed;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ actualNumber;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ fLimit;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ bLimit;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ rLimit;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ lLimit;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ soundFile;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ Direction}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ Right,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ Left,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ Backwards,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ Forward}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ enableLimits;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcold_engine_1_1_player_movement_component}{PlayerMovementComponent}}(std::shared\_ptr<MessageSystem>\ bus,\ \textcolor{keywordtype}{float}\ \_speed,\ \textcolor{keywordtype}{string}\ \_soundFile);}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ GetActualNumber();}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ IncreaseNumber();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcold_engine_1_1_player_movement_component_a0189a070fa0de6a027afa4f648512fac}{UseMessage}}(\mbox{\hyperlink{classcold_engine_1_1_message}{Message}}*\ message)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classcold_engine_1_1_player_movement_component_a9bda8cf4d02307e6fa685c02c2da71a9}{SetMovementLimits}}(\textcolor{keywordtype}{float}\ forward,\ \textcolor{keywordtype}{float}\ backwards,\ \textcolor{keywordtype}{float}\ right,\ \textcolor{keywordtype}{float}\ left);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Forward();}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ BackWards();}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Right();}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Left();}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ OutOfLimits(Direction\ dir,\ \textcolor{keywordtype}{float}\ movement);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ PlayAudio();}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00105\ \ \ \ \ \};}
+\DoxyCodeLine{00106\ \}}
+
+\end{DoxyCode}

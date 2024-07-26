@@ -1,0 +1,63 @@
+\doxysection{cold\+Engine\+::Scene Class Reference}
+\hypertarget{classcold_engine_1_1_scene}{}\label{classcold_engine_1_1_scene}\index{coldEngine::Scene@{coldEngine::Scene}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcold_engine_1_1_scene_ae386a2dc7ee36fe0e239e8818b76b2ff}\label{classcold_engine_1_1_scene_ae386a2dc7ee36fe0e239e8818b76b2ff} 
+{\bfseries Scene} (\mbox{\hyperlink{classcold_engine_1_1_window}{Window}} \&given\+\_\+window)
+\item 
+\Hypertarget{classcold_engine_1_1_scene_a59ed7879997e7e6331ef0b3660b8a878}\label{classcold_engine_1_1_scene_a59ed7879997e7e6331ef0b3660b8a878} 
+void {\bfseries Create\+Scene} ()
+\item 
+\Hypertarget{classcold_engine_1_1_scene_a894d52f1ce9060fe92d553607d1f9ffc}\label{classcold_engine_1_1_scene_a894d52f1ce9060fe92d553607d1f9ffc} 
+void {\bfseries Reset\+Viewport} ()
+\item 
+\Hypertarget{classcold_engine_1_1_scene_a93abcddb96fe3926d64bb60c9c00eda3}\label{classcold_engine_1_1_scene_a93abcddb96fe3926d64bb60c9c00eda3} 
+void {\bfseries initialize} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_kernel}{Kernel}} $>$ kernel, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_message_system}{Message\+System}} $>$ message\+Bus, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} $>$ character, vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} $>$ $>$ numbers, vector$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} $>$ $>$ walls, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcold_engine_1_1_player_movement_component}{Player\+Movement\+Component}} $>$ mov\+Component)
+\begin{DoxyCompactList}\small\item\em Define the initialize function. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_scene_a4337a33196023d83aaa34d7018dbe8d3}\label{classcold_engine_1_1_scene_a4337a33196023d83aaa34d7018dbe8d3} 
+void {\bfseries Add} (const std\+::string \&name, std\+::shared\+\_\+ptr$<$ Node $>$ node)
+\begin{DoxyCompactList}\small\item\em Add a new object to the scene. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_scene_abf3ccec7b1dd08ba7b55d3f486bb44cb}\label{classcold_engine_1_1_scene_abf3ccec7b1dd08ba7b55d3f486bb44cb} 
+Node \texorpdfstring{$\ast$}{*} {\bfseries Get\+Entity} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Get an object that has been previously added to the scene Search the entity in the map of nodes. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_scene_ab7397ae11bba3228efec28df0f6d79b3}\label{classcold_engine_1_1_scene_ab7397ae11bba3228efec28df0f6d79b3} 
+void {\bfseries Update} ()
+\begin{DoxyCompactList}\small\item\em Updates the kernel,catches the keyboard input and manages the sdl2. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_scene_a3c1da46c5fc1ee16ad390833f21087f3}\label{classcold_engine_1_1_scene_a3c1da46c5fc1ee16ad390833f21087f3} 
+void {\bfseries distance\+\_\+to\+\_\+numbers} (float enemyX, float enemyY, float enemyZ, float playerX, float playerY, float playerZ)
+\begin{DoxyCompactList}\small\item\em Checks the distance the player has to the rotating numbers. \end{DoxyCompactList}\item 
+\Hypertarget{classcold_engine_1_1_scene_a8b1162a8a036f24768b1e289d1d5c2f1}\label{classcold_engine_1_1_scene_a8b1162a8a036f24768b1e289d1d5c2f1} 
+void {\bfseries rotate\+\_\+numbers} ()
+\item 
+\Hypertarget{classcold_engine_1_1_scene_a366eccbde9da7891a7db6d8fcb873c35}\label{classcold_engine_1_1_scene_a366eccbde9da7891a7db6d8fcb873c35} 
+void {\bfseries Translate\+Camera} (float x, float y, float z)
+\item 
+\Hypertarget{classcold_engine_1_1_scene_a246931b1a1f5c9da900c9d8fd94cf698}\label{classcold_engine_1_1_scene_a246931b1a1f5c9da900c9d8fd94cf698} 
+void {\bfseries Rotate\+Camerta} (float x, float y, float z)
+\item 
+\Hypertarget{classcold_engine_1_1_scene_a40454605d5ba4d1aad36a707f7aac44e}\label{classcold_engine_1_1_scene_a40454605d5ba4d1aad36a707f7aac44e} 
+void {\bfseries Rotate\+Entities} (const std\+::string \&name, float x, float y, float z)
+\item 
+void \mbox{\hyperlink{classcold_engine_1_1_scene_a324fe818095c1ef14d2869b007fa98c6}{Debug\+Method}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcold_engine_1_1_scene_afca24390a279efb6b87673c34c502f36}\label{classcold_engine_1_1_scene_afca24390a279efb6b87673c34c502f36} 
+vector$<$ \mbox{\hyperlink{classcold_engine_1_1_entity}{Entity}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries level\+Entities}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcold_engine_1_1_scene_a324fe818095c1ef14d2869b007fa98c6}\index{coldEngine::Scene@{coldEngine::Scene}!DebugMethod@{DebugMethod}}
+\index{DebugMethod@{DebugMethod}!coldEngine::Scene@{coldEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{DebugMethod()}{DebugMethod()}}
+{\footnotesize\ttfamily \label{classcold_engine_1_1_scene_a324fe818095c1ef14d2869b007fa98c6} 
+void cold\+Engine\+::\+Scene\+::\+Debug\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Method use for debugging with a breakpoint 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scene.\+h\end{DoxyCompactItemize}

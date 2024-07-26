@@ -1,0 +1,32 @@
+\doxysection{Kernel.\+h}
+\hypertarget{_kernel_8h_source}{}\label{_kernel_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }coldEngine}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entity_system}{EntitySystem}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_render_system}{RenderSystem}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_input_system}{InputSystem}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_message_system}{MessageSystem}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcold_engine_1_1_kernel}{Kernel}}}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::shared\_ptr<EntitySystem>\ entitySystem;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::shared\_ptr\ <\ RenderSystem>\ renderSystem;}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::shared\_ptr\ <\ InputSystem>\ inputSystem;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::shared\_ptr\ <\ MessageSystem>\ messageSystem;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcold_engine_1_1_kernel}{Kernel}}(std::shared\_ptr\ <\ EntitySystem>\ \_entitySystem,\ std::shared\_ptr\ <\ RenderSystem>\ \_renderSystem,\ std::shared\_ptr\ <\ InputSystem>\ \_inputSystem,\ std::shared\_ptr\ <\ MessageSystem>\ \_messageSystem);}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classcold_engine_1_1_kernel}{\string~Kernel}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Update();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}
